@@ -1,21 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: currencyconverter-production
+  name: currencyconverter
   namespace: argocd
 spec:
   project: default
   source:
-<<<<<<< HEAD
-    repoURL: 'https://github.com/Yasminemaroukk/appTest.git'
-=======
-    repoURL: 'hhttps://github.com/Yasminemaroukk/appTest.git'
->>>>>>> origin/main
+
+    repoURL: https://github.com/Yasminemaroukk/kustomize-.git
+
     targetRevision: HEAD
     path: k8s/overlays/production
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: default
+    namespace: prod
   syncPolicy:
     automated:
       selfHeal: true
