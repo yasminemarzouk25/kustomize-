@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: currencyconverter
-  namespace: argocd
+  namespace: prod   # Change the namespace to 'prod'
 spec:
   project: default
   source:
@@ -16,4 +16,3 @@ spec:
     automated:
       selfHeal: true
       prune: true 
-
