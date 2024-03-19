@@ -7,6 +7,7 @@ patches:
     kind: Deployment
     name: be-template
 
-images: 
+images:
 - name: yasminemarzouk/template-fe
-  newTag : demo
+  newName: docker.io/yasminemarzouk/template-fe
+  newTag: f671287
