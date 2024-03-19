@@ -1,13 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: currency-converter
+  name: be-template
 spec:
+  replicas: 5  # Scale up the number of replicas for prod environment
   template:
     spec:
       containers:
-        - name: currency-converter
-          env:
-            - name: FLASK_ENV
-              value: "production"
+      - name: be-template
+        env:
+        - name: ENVIRONMENT
+          value: "prod"  # Set environment variable to "prod"
+        - name: LOG_LEVEL
+          value: "info"  # Set log level to "info" for production
 

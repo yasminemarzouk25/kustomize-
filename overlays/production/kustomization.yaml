@@ -1,14 +1,10 @@
 resources:
 - ../../base
 
-
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
 patches:
-- path: ingress-patch.json
+- path: be-deployment-prod-patch.yaml
   target:
-    group: networking.k8s.io
-    kind: Ingress
-    name: currency-converter-ingress
-    version: v1
-- path: deployment-patch.yaml
+    kind: Deployment
+    name: be-template
+
+

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: be-template
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: be-template
+  template:
+    metadata:
+      labels:
+        app: be-template
+    spec:
+      containers:
+      - name: be-template
+        image: yasminemarzouk/be-template:6b2da91
+        ports:
+        - containerPort: 8000
+       
+       

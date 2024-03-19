@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: currency-converter
+  name: be-template
 spec:
+  replicas: 3  # Change the number of replicas for dev environment
   template:
     spec:
       containers:
-        - name: currency-converter
-          env:
-            - name: FLASK_ENV
-              value: "development"
-
+      - name: be-template
+        env:
+        - name: ENVIRONMENT
+          value: "dev"  # Set environment variable

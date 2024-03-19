@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fe-template
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fe-template
+  template:
+    metadata:
+      labels:
+        app: fe-template
+    spec:
+      containers:
+      - name: fe-template
+        image: yasminemarzouk/fe-template:7c37a92
+        ports:
+        - containerPort: 5173
+       
+       

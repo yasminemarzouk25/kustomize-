@@ -1,5 +1,9 @@
 resources:
-- deployment.yaml
-- service.yaml
-- ingress.yaml
-- sealedsecret.yaml
+- be-deployment.yaml
+- fe-deployment.yaml
+- fe-service.yaml
+- be-service.yaml
+- mongo-deployment.yaml
+- mongo-service.yaml
+
+
