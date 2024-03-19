@@ -7,4 +7,6 @@ patches:
     kind: Deployment
     name: be-template
 
-
+images: 
+- name: yasminemarzouk/template-fe
+  newTag : prod
