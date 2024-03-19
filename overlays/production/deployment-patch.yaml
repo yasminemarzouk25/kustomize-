@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: be-template
+  name: backend-deployment-template
 spec:
   replicas: 5  # Scale up the number of replicas for prod environment
   template:
