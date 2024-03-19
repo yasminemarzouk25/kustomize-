@@ -2,21 +2,18 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: anime
-  namespace: dev   # Change the namespace to 'prod'
+  namespace: dev  # Changed the namespace to 'prod'
 spec:
   project: default
   source:
     repoURL: https://github.com/Yasminemaroukk/kustomize-.git
-    targetRevision: HEAD
-<<<<<<< HEAD
-    path: base
-=======
+    targetRevision: main
     path: overlays/development
->>>>>>> 9b185981d633cbdf9e683e9487199494cc40a943
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: dev
   syncPolicy:
     automated:
       selfHeal: true
-      prune: true 
+      prune: true
+
