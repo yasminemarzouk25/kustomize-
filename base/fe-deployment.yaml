@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fe-template
-        image: yasminemarzouk/template-fe:6bd4b83
+        image: yasminemarzouk/template-fe:d00d17d
         ports:
         - containerPort: 5173
        
