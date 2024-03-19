@@ -2,7 +2,11 @@ resources:
 - ../../base
 
 patches:
-- path: be-deployment-patch.yaml
+- path: backend-deployment-patch.yaml
   target:
     kind: Deployment
     name: be-template
+
+images: 
+- name: yasminemarzouk/template-fe
+  newTag : demo
