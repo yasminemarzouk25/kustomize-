@@ -8,11 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Yasminemaroukk/kustomize-.git
     targetRevision: HEAD
-<<<<<<< HEAD
-    path: base
-=======
-    path: overlays/development
->>>>>>> 9b185981d633cbdf9e683e9487199494cc40a943
+    path: overlays/
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: dev
