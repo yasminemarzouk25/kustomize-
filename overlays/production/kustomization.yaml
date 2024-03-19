@@ -2,7 +2,7 @@ resources:
 - ../../base
 
 patches:
-- path: be-deployment-prod-patch.yaml
+- path: deployment-patch.yaml
   target:
     kind: Deployment
     name: be-template
