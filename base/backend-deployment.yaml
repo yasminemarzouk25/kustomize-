@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: be-template
-        image: docker.io/yasminemarzouk/be-template:6b2da91
+        image: yasminemarzouk/template-be:6577d3a
         ports:
         - containerPort: 8000
        
