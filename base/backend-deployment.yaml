@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: be-template
-        image: yasminemarzouk/template-be:6577d3a
+        image: yasminemarzouk/template-be:fe12385
         ports:
         - containerPort: 8000
        
