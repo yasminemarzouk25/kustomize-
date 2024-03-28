@@ -1,6 +1,7 @@
 resources:
 - ../../base
-
+commonLabels: 
+  app: dev
 patches:
 - path: backend-deployment-patch.yaml
   target:
