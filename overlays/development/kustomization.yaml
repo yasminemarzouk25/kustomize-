@@ -6,7 +6,7 @@ patches:
     kind: Deployment
     name: fe-template
     version: v1
-- path: backend-deployment-patch.yaml
+- path: deployment-patch.yaml
   target:
     kind: Deployment
     name: be-template
