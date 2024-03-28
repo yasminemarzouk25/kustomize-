@@ -8,7 +8,7 @@ patches:
       kind: Deployment
       name: fe-template
     patch: 
-       path: fe-deployment-patch.yaml
+      - path: fe-deployment-patch.yaml
 images:
 - name: yasminemarzouk/template-fe
   newName: docker.io/yasminemarzouk/template-fe
