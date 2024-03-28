@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: be-template
+  name: fe-template
 spec:
   replicas: 2  # Change the number of replicas for dev environment
   template:
     spec:
       containers:
-      - name: be-template
+      - name: fe-template
         env:
         - name: ENVIRONMENT
           value: "dev"  # Set environment variable
