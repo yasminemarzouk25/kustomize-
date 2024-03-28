@@ -6,8 +6,16 @@ patches:
     kind: Deployment
     name: fe-template
     version: v1
+- path: backend-deployment-patch.yaml
+  target:
+    kind: Deployment
+    name: be-template
+    version: v1
 
 images:
 - name: yasminemarzouk/template-fe
   newName: docker.io/yasminemarzouk/template-fe
   newTag: 92adc14
+- name: yasminemarzouk/template-be
+  newName: docker.io/yasminemarzouk/template-be
+  newTag: fe12385
