@@ -18,4 +18,4 @@ spec:
         ports:
         - containerPort: 8000
 
-revisionHistoryLimit: 2
+  revisionHistoryLimit: 2
