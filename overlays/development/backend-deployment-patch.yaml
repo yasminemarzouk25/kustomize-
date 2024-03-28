@@ -11,3 +11,4 @@ spec:
         env:
         - name: ENVIRONMENT
           value: "dev"  # Set environment variable
+  revisionHistoryLimit: 1
