@@ -1,14 +1,4 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: fe-template
-spec:
-  replicas: 2  # Change the number of replicas for dev environment
-  template:
-    spec:
-      containers:
-      - name: fe-template
-        env:
-        - name: ENVIRONMENT
-          value: "dev"  # Set environment variable
-  revisionHistoryLimit: 1
+
+- op: replace
+        path: /spec/replicas
+        value: 3
