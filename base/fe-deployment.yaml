@@ -17,5 +17,5 @@ spec:
         image: yasminemarzouk/template-fe:d00d17d
         ports:
         - containerPort: 5173
-  revisionHistoryLimit: 1       
+       
        
