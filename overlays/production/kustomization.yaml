@@ -7,13 +7,13 @@ patches:
   target:
     kind: Deployment
     name: fe-template
-    version: 1
+    
    
 - path: deployment-patch.yaml
   target:
     kind: Deployment
     name: be-template
-    version: 1
+    
    
 
 images:
