@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: be-template
 spec:
-  replicas: 3  # Change the number of replicas for dev environment
+  replicas: 2  # Change the number of replicas for dev environment
   template:
     spec:
       containers:
