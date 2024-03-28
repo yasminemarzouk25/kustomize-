@@ -2,10 +2,10 @@ resources:
 - ../../base
 
 patches:
-- path: deployment-patch.yaml
+- path: fe-deployment-patch.yaml
   target:
     kind: Deployment
-    name: be-template
+    name: fe-template
 images:
 - name: yasminemarzouk/template-fe
   newName: docker.io/yasminemarzouk/template-fe
