@@ -5,6 +5,7 @@ patches:
   target:
     kind: Deployment
     name: fe-template
+    version: v1
 
 images:
 - name: yasminemarzouk/template-fe
