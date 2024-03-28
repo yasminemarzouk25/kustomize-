@@ -4,7 +4,7 @@ resources:
 - ../../base
 
 patches:
-- path: fe-deployment-patch.yaml
+- path: ./fe-deployment-patch.yaml
   target:
     kind: Deployment
     name: fe-template
