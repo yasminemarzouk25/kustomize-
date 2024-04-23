@@ -18,6 +18,3 @@ images:
 - name: yasminemarzouk/template-fe
   newName: docker.io/yasminemarzouk/template-fe
   newTag: d359416
-- name: yasminemarzouk/template-be
-  newName: docker.io/yasminemarzouk/template-be
-  newTag: d359416
