@@ -19,7 +19,7 @@ patches:
 images:
 - name: yasminemarzouk/template-fe
   newName: docker.io/yasminemarzouk/template-fe
-  newTag: a0f11bf
+  newTag: 2804f71
 - name: yasminemarzouk/template-be
   newName: docker.io/yasminemarzouk/template-be
-  newTag: a0f11bf
+  newTag: 2804f71
