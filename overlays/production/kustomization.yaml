@@ -19,7 +19,7 @@ patches:
 images:
 - name: yasminemarzouk/template-fe-prod
   newName: docker.io/yasminemarzouk/template-fe-prod
-  newTag: 8fa94ed95ca54d0480ebcff91147285cb2160e5b
+  newTag: 8ad70314e6f07cd67853256ad7b34eac44daa5b8
 - name: yasminemarzouk/template-be_prod
   newName: docker.io/yasminemarzouk/template-be-prod
-  newTag: 689d916
+  newTag: 8ad70314e6f07cd67853256ad7b34eac44daa5b8
