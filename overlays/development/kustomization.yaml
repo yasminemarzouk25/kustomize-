@@ -17,8 +17,8 @@ patches:
 images:
 - name: yasminemarzouk/template-fe-dev
   newName: docker.io/yasminemarzouk/template-fe-dev
-  newTag: 8b81d7a4a860a780d76a3cadb06def240b7b85e6
+  newTag: f89355a0ff3122a9b64930d70021100625fe2cfc
 - name: yasminemarzouk/template-fe-dev
   newName: docker.io/yasminemarzouk/template-be-dev
-  newTag: 8b81d7a4a860a780d76a3cadb06def240b7b85e6
+  newTag: f89355a0ff3122a9b64930d70021100625fe2cfc
 
