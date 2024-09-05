@@ -7,19 +7,18 @@ patches:
   target:
     kind: Deployment
     name: fe-template
-    
    
 - path: deployment-patch.yaml
   target:
     kind: Deployment
     name: be-template
-    
    
 
 images:
 - name: yasminemarzouk/template-fe-prod
   newName: docker.io/yasminemarzouk/template-fe-prod
-  newTag: ea77f43b4599c7ddbdb55b540277234cb4614763
-- name: yasminemarzouk/template-be_prod
+  newTag: fe-prod
+- name: yasminemarzouk/template-be-prod
   newName: docker.io/yasminemarzouk/template-be-prod
-  newTag: ea77f43b4599c7ddbdb55b540277234cb4614763
+  newTag: be-prod
+

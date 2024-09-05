@@ -1,14 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: dev 
+namespace: prod 
 resources:
 - ../../../../../../base/be
 
 images:
-- name: yasminemarzouk/template-be-dev
-  newName: docker.io/yasminemarzouk/template-be-dev
-  newTag: be-dev
+- name: yasminemarzouk/template-be-prod
+  newName: docker.io/yasminemarzouk/template-be-prod
+  newTag: be-prod
 
 patches:
 - path: ./patches/deployment.yaml

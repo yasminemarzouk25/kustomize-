@@ -3,12 +3,12 @@ kind: Kustomization
 
 namespace: dev 
 resources:
-- ../../../../../../base/be
+- ../../../../../../base/fe
 
 images:
-- name: yasminemarzouk/template-be-dev
-  newName: docker.io/yasminemarzouk/template-be-dev
-  newTag: be-dev
+- name: yasminemarzouk/template-fe-dev
+  newName: docker.io/yasminemarzouk/template-fe-dev
+  newTag: fe-dev
 
 patches:
 - path: ./patches/deployment.yaml
