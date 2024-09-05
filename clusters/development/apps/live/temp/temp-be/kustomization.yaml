@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: dev 
 resources:
 - ../../../../../../base/be
-
+- ./overlays/pod-disruption-budget.yaml
 images:
 - name: yasminemarzouk/template-be
   newName: docker.io/yasminemarzouk/template-be-dev
