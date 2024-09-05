@@ -6,7 +6,7 @@ resources:
 - ../../../../../../base/be
 
 images:
-- name: yasminemarzouk/template-be-dev
+- name: yasminemarzouk/template-be
   newName: docker.io/yasminemarzouk/template-be-dev
   newTag: be-dev
 
