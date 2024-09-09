@@ -16,3 +16,11 @@ patches:
     group: apps
     kind: Deployment
     version: v1
+configMapGenerator:
+  - name: myconfigmap
+    envs:
+      - ./generators/config.properties
+secretGenerator:
+  - name: mysecret
+    envs: 
+      - ./generators/secret.properties
