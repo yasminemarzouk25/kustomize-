@@ -6,10 +6,9 @@ resources:
 - ../../../../../../base/be
 - ./overlays/pod-disruption-budget.yaml
 images:
-- name: yasminemarzouk/template-be
-  newName: docker.io/yasminemarzouk/template-be-stag
-  newTag: be-stag
-
+- name: yasminemarzouk/template-be  
+  newName: yasminemarzouk/temp-be-stag 
+  newTag: be-stag  
 patches:
 - path: ./patches/deployment.yaml
   target:
