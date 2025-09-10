@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: be-template
+  labels:
+    app: myapp-be
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp-be
+  template:
+    metadata:
+      labels:
+        app: myapp-be
+    spec:
+      containers:
+        - name: backend
+          image: yasminemarzouk/template-be-dev:be-dev
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: myconfigmap
+            - secretRef:
+                name: mysecret
